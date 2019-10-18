@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Your Prefrences</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="user-prefs.html">Prefrences</a></li>
+                    <li><a href="map.html">Map</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <form onsubmit="onSubmit(event)">
+                <label for="userName">User Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name"></br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" name="dob" id="dob"></br>
+                <label for="background-color">What background color would you like?</label>
+                <input type="color" name="background-color" id="bgColor" value="#ffffff"></br>
+                <label for="text-color">What text color would you like?</label>
+                <input type="color" name="text-color" id="txtColor" value="#000000"></br>
+                <button type="submit" >Set Prefs</button>
+            </form>
+        </section>
+
+        <script src="js/main.js"></script>
+        <script src="js/utilService.js"></script>
+        <script src="js/userPrefService.js"></script>
+        <script src="js/placeService.js"></script>
+    </body>
+
+</html>
