@@ -8,3 +8,7 @@ function loadFromLocalStorage(key) {
     var value = JSON.parse(str)
     return value;
 }
+
+function getRandomIntInclusive(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}

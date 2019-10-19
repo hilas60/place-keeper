@@ -4,9 +4,53 @@
 
 body {
     background-color: lightblue;
+    color: black;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 h1 {
-    color: aliceblue;
+    /* color: aliceblue; */
     font-size: 2rem;
+    text-decoration: underline;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    padding: 30px;
+    
+}
+
+table td{
+    width: 10rem;
+    word-wrap: break-word;
+    padding: 5px;
+}
+/* 
+.horoscope {
+    display: none;
+} */
+
+/* p[class*="horoscope"] {
+    display: none;
+} */
+
+.hide {
+    display: none;
 }

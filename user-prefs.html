@@ -11,7 +11,7 @@
 
     <body>
         <header>
-            <h1>Your Prefrences</h1>
+            <h1>PlaceKeeper-proj</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -20,24 +20,44 @@
                 </ul>
             </nav>
         </header>
-        <section>
+        <h2>Your Prefrences</h2>
+        <section class="form">
             <form onsubmit="onSubmit(event)">
-                <label for="userName">User Name:</label>
-                <input type="text" name="name" id="name" placeholder="Enter your name"></br>
-                <label for="dob">Date of Birth:</label>
-                <input type="date" name="dob" id="dob"></br>
-                <label for="background-color">What background color would you like?</label>
-                <input type="color" name="background-color" id="bgColor" value="#ffffff"></br>
-                <label for="text-color">What text color would you like?</label>
-                <input type="color" name="text-color" id="txtColor" value="#000000"></br>
-                <button type="submit" >Set Prefs</button>
+                <table>
+                    <tr>
+                        <td><label for="userName">User Name:</label></td>
+                        <td><input type="text" name="name" id="name" placeholder="Enter your name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dob">Date of Birth:</label></td>
+                        <td><input type="date" name="dob" id="dob"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="background-color">What background color would you like?</label></td>
+                        <td><input type="color" name="background-color" id="bgColor" value="#ffffff"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="text-color">What text color would you like?</label></td>
+                        <td><input type="color" name="text-color" id="txtColor" value="#000000"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="submit">Set Prefs</button></td>
+                    </tr>
+                </table>
             </form>
         </section>
-
-        <script src="js/main.js"></script>
+        <article class="horoscope-container">
+            <!-- <h3>Your sign is:<span class="astrology-sign"></span></h3> -->
+            <p class="horoscope1 horoscope hide">The upcoming week will start tough but will continue better. Towards the end of
+                the week you will have a big project and will succeed tremendously!</p>
+            <p class="horoscope2 horoscope hide">Drink a lot of water and breath deep as there is an upcoming event on wednsday.
+                Invest yourself in this event and it will payoff...</p>
+            <p class="horoscope3 horoscope hide">Be patient. Good things don't come easy.</p>
+        </article>
         <script src="js/utilService.js"></script>
         <script src="js/userPrefService.js"></script>
         <script src="js/placeService.js"></script>
+        <script src="js/main.js"></script>
     </body>
 
 </html>
